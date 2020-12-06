@@ -8,7 +8,7 @@
 ----
 * Responsive design (mobile-first) using SCSS/ SASS and Material-UI.
 [![N|](https://github.com/sapirwo/tasko_public/blob/master/tasko-demo-mobile.gif?raw=true)](https://tasko-board.herokuapp.com)
-
+----
 # New Features!
 
   - Board side-bar
