@@ -1,0 +1,201 @@
+.cards-container {
+    max-height: 55vh;
+    min-height: 1px;
+
+    &.scroll-y {
+        overflow-y: auto;
+    }
+
+    &.no-scroll-y {
+        overflow-y: unset;
+    }
+}
+
+.card-container {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 5px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    overflow-x: hidden;
+
+    &:hover {
+        background-color: rgb(228, 224, 224);
+    }
+
+    .img-member-on-card {
+        max-width: 25px;
+        max-height: 25px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 3px;
+    }
+
+    &.red-bgc {
+        background: $red-bgc;
+
+        &:hover {
+            background: $red-bgc-hover;
+        }
+    }
+
+    &.green-bgc {
+        background: $green-bgc;
+
+        &:hover {
+            background: $green-bgc-hover;
+        }
+    }
+
+    &.yellow-bgc {
+        background: $yellow-bgc;
+
+        &:hover {
+            background: $yellow-bgc-hover;
+        }
+    }
+
+    &.purple-bgc {
+        background: $purple-bgc;
+
+        &:hover {
+            background: $purple-bgc-hover;
+        }
+    }
+
+    &.blue-bgc {
+        background: $blue-bgc;
+
+        &:hover {
+            background: $blue-bgc-hover;
+
+        }
+    }
+
+    &.orange-bgc {
+        background: $orange-bgc;
+
+        &:hover {
+            background: $orange-bgc-hover;
+        }
+    }
+
+    .red-label,
+    .red-cover {
+        background-color: $red-label;
+
+        &:hover {
+            background-color: $red-label-hover;
+        }
+    }
+
+    .green-label,
+    .green-cover {
+        background-color: $green-label;
+
+        &:hover {
+            background-color: $green-label-hover;
+        }
+    }
+
+    .yellow-label,
+    .yellow-cover {
+        background-color: $yellow-label;
+
+        &:hover {
+            background-color: $yellow-label-hover;
+        }
+    }
+
+    .purple-label,
+    .purple-cover {
+        background-color: $purple-label;
+
+        &:hover {
+            background-color: $purple-label-hover;
+        }
+    }
+
+    .blue-label,
+    .blue-cover {
+        background-color: $blue-label;
+
+
+        &:hover {
+            background-color: $blue-label-hover;
+
+        }
+    }
+
+    .orange-label,
+    .orange-cover {
+        background-color: $orange-label;
+
+        &:hover {
+            background-color: $orange-label-hover;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .card-content-icons {
+        span {
+            margin-inline-end: 10px;
+        }
+    }
+
+    .card-content-card-completed {
+        font-size: 1rem;
+    }
+
+    .card-content-checklist {
+        svg {
+            margin-inline-end: 2px;
+        }
+
+        .checklist-preview {
+            font-size: 14px;
+        }
+    }
+}
+
+.card-labels-wrapper {
+    flex-wrap: wrap;
+}
+
+.card-cover {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.card-label {
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 4px;
+    line-height: 1rem;
+    margin-right: 2px;
+    min-height: 10px;
+    min-width: 60px;
+    transition: 0.5s;
+
+    &.label-full-display {
+        min-width: 70px;
+        transition: 0.5s;
+    }
+}

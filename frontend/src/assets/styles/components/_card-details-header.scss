@@ -1,0 +1,49 @@
+.card-details-header {
+    padding: 20px;
+    min-height: 32px;
+    position: relative;
+    z-index: 1;
+
+    .card-details-cover-img {
+        padding-top: 5px;
+        width: 95%;
+        background-color: rgb(228, 228, 228);
+        text-align: center;
+        margin-bottom: 10px;
+
+        img {
+            width: 20%;
+            object-fit: fill
+        }
+    }
+
+    .input-card-title {
+        font-size: 1.3rem;
+        min-height: 20px;
+        font-family: $main-font;
+        border: none;
+        text-align: left;
+        font-weight: 500;
+        background-color: inherit;
+        width: 80%;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    p {
+        display: block;
+        font-size: 0.9rem;
+        color: rgb(116, 115, 115);
+        margin-bottom: 5px;
+    }
+
+    span {
+        text-decoration: underline;
+        text-overflow: ellipsis;
+    }
+
+    &.editing-mode {
+        color: '#ebecf0'
+    }
+}

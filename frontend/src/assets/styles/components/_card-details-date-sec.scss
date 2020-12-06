@@ -1,0 +1,28 @@
+.card-details-date-container {
+    margin-left: 20px;
+}
+
+.card-details-date-content {
+    max-width: 200px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    &:last-child {
+        line-height: 0;
+
+        &>:first-child {
+            margin-right: 10px;
+        }
+
+        &>:last-child {
+            margin-bottom: -22px;
+            color: rgba(182, 26, 26, 0.42);
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(182, 26, 26, 0.872);
+            }
+        }
+    }
+}

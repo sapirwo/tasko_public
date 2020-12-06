@@ -1,0 +1,24 @@
+.board-side-bar-bg-imgs-container {
+    width: 100%;
+    max-height: 50vh;
+    margin: 0 auto;
+
+    .bg-imgs-content {
+        max-height: 64vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        img {
+            max-width: 100%;
+            max-height: 200px;
+            min-width: 60px;
+            margin: 8px;
+            cursor: pointer;
+            object-fit: cover;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

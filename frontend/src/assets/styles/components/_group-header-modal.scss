@@ -1,0 +1,10 @@
+.group-header-modal-container {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    z-index: 2;
+
+    .MuiMenuItem-root {
+        min-height: 0px;
+    }
+}

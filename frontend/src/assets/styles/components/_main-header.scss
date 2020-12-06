@@ -1,0 +1,54 @@
+.main-header {
+    position: absolute;
+    background-color: #0000004f;
+    width: 100%;
+    padding: 10px;
+    max-height: 45px;
+    z-index: $header-z-index;
+    color: white;
+}
+
+.logo-container {
+    width: 85px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.header-right-sec {
+    position: absolute;
+    right: 5px;
+}
+
+.header-btn {
+    border: none;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+
+    &:not(:first-of-type) {
+        margin-left: 5px;
+    }
+
+    &.btn-user {
+        border-radius: 60px;
+        background-color: rgb(222, 229, 245);
+        color: grey;
+        border: rgba(76, 254, 0, 0.616) 1px solid;
+        margin-right: 10px;
+
+        &:hover {
+            background-color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.header-add-board {
+    border-radius: 2px;
+    background-color: #2b83b6;
+
+    &:hover {
+        background-color: #258cc9;
+    }
+}

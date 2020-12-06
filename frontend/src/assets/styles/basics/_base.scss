@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    font-size: rem(18px);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $main-font;
+    margin: 0 0 0.6em;
+    line-height: 1;
+}
+
+h1 {
+    font-size: rem(68px);
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0 0 1em;
+    max-width: 40ch;
+}
+
+a {
+    text-decoration: none;
+    height: 0;
+
+    &:visited {
+        color: inherit
+    }
+}
+
+input {
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9e9e9e8a;
+    border-radius: 5px;
+
+    &:hover {
+        background: #9e9e9ebb;
+    }
+}

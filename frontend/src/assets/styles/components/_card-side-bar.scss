@@ -1,0 +1,93 @@
+.card-side-bar {
+    float: right;
+    padding: 0 16px 8px 8px;
+    width: 160px;
+    overflow: hidden;
+
+    h3 {
+        color: #5e6c84;
+        background-color: inherit;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        margin-top: 16px;
+        text-transform: uppercase;
+        line-height: 20px;
+        margin-bottom: -4px;
+    }
+
+    .btn-label-sidebar {
+        content: url(../../imgs/label-icon.svg);
+    }
+
+    .btn-card-side-bar {
+        background-color: rgba(9, 30, 66, 0.04);
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        height: 32px;
+        margin-top: 8px;
+        max-width: 300px;
+        overflow: hidden;
+        padding: 6px 12px;
+        text-overflow: ellipsis;
+        outline: none;
+
+        &:hover:not(h3) {
+            background-color: rgba(156, 156, 156, 0.171);
+        }
+
+        &>.card-edit-square {
+            width: 30px;
+            min-height: 25px;
+            display: inline-block;
+            margin-right: 5px;
+            border-radius: 5px;
+            vertical-align: top;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        &>form {
+            .add-checklist-input {
+                border: 2px solid #0674cc;
+                font-size: 0.8rem;
+                background-color: #fff;
+                padding: 0;
+                display: flex;
+                height: 23px;
+                width: 100%;
+            }
+        }
+    }
+    .muted {
+        color: rgba(0, 0, 0, 0.338);
+        cursor: auto;
+    }
+}
+
+.icon-cancel {
+    margin-left: 35px;
+    color: rgba(171, 16, 16, 0.543);
+    line-height: 0;
+
+    &:hover {
+        color: red;
+    }
+}
+
+@media (max-width: 740px) {
+    .card-side-bar {
+        float: left;
+        margin-left: 10px;
+        width: 200px;
+    }
+
+    .card-side-bar>*:not(h3) {
+        width: auto;
+        margin-right: 2px;
+        font-size: 0.8rem;
+    }
+}

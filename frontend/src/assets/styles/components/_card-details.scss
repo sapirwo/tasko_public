@@ -1,0 +1,235 @@
+.card-details-container {
+    position: absolute;
+    margin: 48px 0 80px;
+    z-index: $modal-z-index;
+    background-color: #ebecf0;
+    min-height: 600px;
+    padding: 20px;
+    overflow-y: scroll;
+
+    .red-label,
+    .red-cover {
+        background-color: $red-label;
+
+        &:hover {
+            background-color: $red-label-hover;
+        }
+    }
+
+    .green-label,
+    .green-cover {
+        background-color: $green-label;
+
+        &:hover {
+            background-color: $green-label-hover;
+        }
+    }
+
+    .yellow-label,
+    .yellow-cover {
+        background-color: $yellow-label;
+
+        &:hover {
+            background-color: $yellow-label-hover;
+        }
+    }
+
+    .blue-label,
+    .blue-cover {
+        background-color: $blue-label;
+
+        &:hover {
+            background-color: $blue-label-hover;
+        }
+    }
+
+    .purple-label,
+    .purple-cover {
+        background-color: $purple-label;
+
+        &:hover {
+            background-color: $purple-label-hover;
+        }
+    }
+
+    .orange-label,
+    .orange-cover {
+        background-color: $orange-label;
+
+        &:hover {
+            background-color: $orange-label-hover;
+        }
+    }
+
+    .red-bgc {
+        background: $red-bgc;
+
+        &:hover {
+            background: $red-bgc-hover;
+        }
+    }
+
+    .green-bgc {
+        background: $green-bgc;
+
+        &:hover {
+            background: $green-bgc-hover;
+        }
+    }
+
+    .yellow-bgc {
+        background: $yellow-bgc;
+
+        &:hover {
+            background: $yellow-bgc-hover;
+        }
+    }
+
+    .blue-bgc {
+        background: $blue-bgc;
+
+        &:hover {
+            background: $blue-bgc-hover;
+        }
+    }
+
+    .purple-bgc {
+        background: $purple-bgc;
+
+        &:hover {
+            background: $purple-bgc-hover;
+        }
+    }
+
+    .orange-bgc {
+        background: $orange-bgc;
+
+        &:hover {
+            background: $orange-bgc-hover;
+        }
+    }
+}
+
+.modal-edit-label-container {
+    font-size: 1rem;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(245, 245, 245);
+    height: 335px;
+    width: 270px;
+    z-index: $modal-edit-label;
+    padding: 10px;
+    border-radius: 5px;
+
+    h2 {
+        font-size: 0.9rem;
+        text-align: center;
+        color: rgb(94, 94, 94);
+        font-weight: 200;
+        border-bottom: solid 1px rgb(194, 194, 194);
+        padding-bottom: 10px;
+    }
+
+    .modal-edit-label-close-btn {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        padding: 5px;
+        content: $btn-close;
+        transform: rotate(45deg);
+        border-radius: 50%;
+
+        &:hover {
+            background-color: rgb(240, 240, 240);
+        }
+    }
+
+    input {
+        width: 242px;
+        padding: 5px;
+        text-align: left;
+        margin-bottom: 15px;
+        margin-left: 4px;
+        border: 2px rgb(212, 212, 212) solid;
+    }
+
+    h3 {
+        font-size: 0.75rem;
+        color: gray;
+        font-weight: 300;
+        line-height: 7px;
+        padding-left: 6px;
+    }
+
+    .labels-container-in-modal-edit-label {
+        padding: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+
+        & > * {
+            margin-bottom: 5px;
+            border-radius: 5px;
+            padding: 4px;
+            padding-left: 4px;
+            color: rgb(243, 232, 232);
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.btn-close-card-details-container {
+    .btn-close-card-details {
+        border-radius: 50%;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        margin-right: 2px;
+        border: none;
+        background-color: inherit;
+        color: rgb(66, 82, 110);
+        padding: 10px;
+        font-size: 1rem;
+        transform: rotate(45deg);
+        outline: none;
+        cursor: pointer;
+        line-height: 0;
+
+        &::after {
+            content: $btn-close;
+        }
+    }
+
+    &:hover {
+        background-color: rgb(211, 211, 211);
+    }
+}
+
+.card-details-main-col {
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 24px;
+    padding: 0 8px 8px 16px;
+    width: 552px;
+}
+
+@media (max-width: 740px) {
+    .card-details-container {
+        position: static;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        min-height: 0;
+
+        .card-details-main-col {
+            width: 100%;
+
+            .card-details-description-section > :nth-child(2) {
+                width: 88vw;
+            }
+        }
+    }
+}

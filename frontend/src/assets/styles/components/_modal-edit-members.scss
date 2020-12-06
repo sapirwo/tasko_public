@@ -1,0 +1,101 @@
+.modal-edit-members-container {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(245, 245, 245);
+    width: 270px;
+    z-index: $modal-edit-label;
+    padding: 10px;
+    border-radius: 5px;
+
+    &.board-header-cmp {
+        top: 306px;
+        left: 158px;
+        width: 95%;
+        max-width: 300px;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+        text-align: center;
+        color: rgb(94, 94, 94);
+        font-weight: 200;
+        border-bottom: solid 1px rgb(194, 194, 194);
+        padding: 7px;
+    }
+
+    h3 {
+        font-size: 0.75rem;
+        color: gray;
+        font-weight: 300;
+        padding-left: 6px;
+    }
+}
+
+.modal-edit-members-close-btn {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    padding: 5px;
+    content: $btn-close;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(235, 235, 235);
+    }
+}
+
+.members-container-in-edit-members-modal {
+    padding-left: 4px;
+    line-height: 0;
+}
+
+.member-in-edit-members-modal {
+    border-radius: 3px;
+    padding-left: 4px;
+    color: rgb(243, 232, 232);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 7px;
+    padding: 3px;
+    align-content: center;
+    background-color: rgb(238, 238, 238);
+    position: relative;
+
+    img {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        object-fit: cover;
+        vertical-align: bottom;
+        margin-right: 10px;
+        background-color: #fff;
+        padding: 1px;
+    }
+
+    p {
+        display: inline-block;
+        color: rgb(45, 45, 45);
+        text-transform: capitalize;
+        padding: 2px 0;
+        margin-right: 7px;
+    }
+
+    .member-asigned-to-card {
+        display: inline-block;
+        color: black;
+        right: 10px;
+        text-align: right;
+        position: absolute;
+        top: 13px;
+    }
+
+    &:hover {
+        background-color: rgb(227, 227, 227);
+        transition: 0.3s;
+    }
+}

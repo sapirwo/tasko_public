@@ -1,0 +1,12 @@
+.window-overlay {
+    background-color: rgba(0, 0, 0, .64);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: $overlay-z-index
+}

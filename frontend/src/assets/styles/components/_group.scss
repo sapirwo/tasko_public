@@ -1,0 +1,174 @@
+.groups-container-wrapper {
+    height: calc(100vh - 100px);
+    overflow-y: hidden;
+}
+
+.groups-container {
+    margin: 0 4px;
+    height: 100%;
+    width: max-content;
+}
+
+.group-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 4px;
+    height: 100%;
+}
+
+.group {
+    width: 272px;
+    min-width: 215px;
+    border-radius: 2px;
+    padding: 2px;
+    background-color: #ebecf0;
+    color: rgb(23, 43, 77);
+}
+
+.group-header {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 100;
+    position: relative;
+    cursor: pointer;
+
+    .input-group-title {
+        font-size: 0.875rem;
+        font-family: $main-font;
+        background-color: inherit;
+        border: none;
+        text-align: left;
+        font-weight: 550;
+        background-color: inherit;
+        line-height: 20px;
+        padding-left: 2px;
+        text-overflow: ellipsis;
+        display: block;
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        z-index: $btn-edit-group;
+        cursor: pointer;
+    }
+
+    .edit-mode {
+        color: #ebecf0
+    }
+
+    .black {
+        color: black
+    }
+}
+
+.btn-add-group {
+    border: none;
+    color: rgb(121, 129, 142);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    padding: 6px;
+    outline: none;
+
+    &:hover {
+        background-color: rgb(220, 218, 218);
+    }
+}
+
+.btn-add-card-wrapper {
+    padding: 5px;
+
+    .btn-add-card {
+        border: none;
+        color: rgb(121, 129, 142);
+        cursor: pointer;
+        width: 85%;
+        text-align: left;
+        font-size: 0.9rem;
+        border-radius: 3px;
+        padding: 6px;
+        outline: none;
+
+        &:hover {
+            background-color: rgb(220, 218, 218);
+        }
+    }
+
+}
+
+.btn-add-group-card-accordion {
+    background-color: $green-label;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    vertical-align: top;
+    margin-top: 3px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $green-label-hover;
+    }
+}
+
+.input-add-group-card-accordion {
+    border: none;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+.btn-close-add-group-card {
+    border: none;
+    margin-left: 100px;
+    margin-top: 10px;
+    transform: rotate(45deg);
+    background-color: inherit;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+
+    &::after {
+        content: $btn-close
+    }
+
+    &:hover {
+        background-color: rgb(219, 216, 216);
+    }
+}
+
+.btn-add-card-wrapper {
+    padding: 5px;
+
+    .btn-add-card {
+        border: none;
+        color: rgb(121, 129, 142);
+        cursor: pointer;
+        width: 85%;
+        text-align: left;
+        font-size: 0.9rem;
+        border-radius: 3px;
+        padding: 6px;
+        outline: none;
+
+        &:hover {
+            background-color: rgb(220, 218, 218);
+        }
+    }
+}
+
+@media (max-width:460px) {
+    .group {
+        width: 90vw;
+    }
+}

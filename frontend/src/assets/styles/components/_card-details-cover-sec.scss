@@ -1,0 +1,29 @@
+.card-details-cover-container {
+    width: 80%;
+    max-width: 300px;
+    margin-left: 15px;
+
+    img {
+        border-radius: 10px;
+        object-fit: contain;
+        width: 100%;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    iframe {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .cover-color {
+        width: 100%;
+        border-radius: 10px;
+        height: 80px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+}

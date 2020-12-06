@@ -1,0 +1,48 @@
+.login-container {
+    width: 100%;
+
+    &.hidden {
+        display: none;
+    }
+
+    img {
+        max-width: 70px;
+    }
+
+    h1 {
+        color: #5E6C84;
+        font-size: 1rem;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+
+    input {
+        font-size: 0.875rem;
+        border: 2px solid #DFE1E6;
+        border-radius: 3px;
+        height: 44px;
+        padding: 10px;
+        width: 80%;
+        margin: 0 0 1.2em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .login-signup-btn {
+        font-size: 1rem;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        font-family: inherit;
+        background-color: #fff;
+        margin-bottom: 20px;
+        outline: none;
+        background-color: rgb(90, 172, 68);
+        padding: 10px;
+        width: 80%;
+
+        &:hover {
+            background-color: rgb(140, 206, 122);
+        }
+    }
+}

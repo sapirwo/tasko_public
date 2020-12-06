@@ -1,0 +1,50 @@
+.my-boards-container {
+    width: 100%;
+    max-height: 50vh;
+    margin: 0 auto;
+
+    .my-boards-content {
+        max-height: 64vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        .board-img {
+            max-width: 100%;
+            max-height: 200px;
+            min-width: 60px;
+            margin: 5px 0 15px;
+            cursor: pointer;
+            object-fit: cover;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .board-preview {
+        position: relative;
+
+        h3 {
+            margin: 0;
+        }
+
+        .member-imgs-container {
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+            max-width: 70%;
+            overflow-x: hidden;
+            height: 38px;
+        }
+
+        .member-img {
+            border: 1px solid white;
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    }
+}

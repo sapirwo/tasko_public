@@ -1,0 +1,72 @@
+.card-details-description-section {
+    margin-bottom: 24px;
+
+    .shown {
+        display: inline-block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    label {
+        align-items: center;
+        min-height: 32px;
+    }
+
+    textarea {
+        background-color: rgba(9, 30, 66, .04);
+        border: none;
+        border-radius: 3px;
+        display: block;
+        min-height: 20px;
+        padding: 8px 12px;
+        font-family: $main-font;
+        resize: none;
+        outline: none;
+        margin-bottom: 10px;
+        transition: 0.5s;
+        width: 100%;
+
+        &:focus {
+            background-color: #fff;
+            min-height: 90px;
+            transition: 0.5s;
+        }
+    }
+
+    .btn-save-description {
+        background-color: $green-label;
+        color: rgb(241, 241, 241);
+        min-height: 33px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 0;
+
+
+        &:hover {
+            background-color: $green-label-hover;
+        }
+    }
+
+    .btn-close-and-unsave-description {
+        transform: rotate(45deg);
+        border: none;
+        background-color: inherit;
+        min-height: 30px;
+        line-height: 0;
+        border-radius: 50%;
+        margin-left: 10px;
+        vertical-align: top;
+        background-color: rgb(221, 220, 220);
+
+        &:after {
+            content: $btn-close;
+        }
+
+        &:hover {
+            background-color: rgb(196, 196, 196);
+        }
+    }
+}

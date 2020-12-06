@@ -1,0 +1,13 @@
+.card-content-date-container {
+    color: rgba(0, 0, 0, 0.479);
+    font-size: 1rem;
+
+    :not(p) {
+        margin-right: 3px;
+        font-size: 1.1rem;
+    }
+
+    .due-date-error {
+        color: red;
+    }
+}

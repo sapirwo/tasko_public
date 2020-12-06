@@ -1,0 +1,87 @@
+.login-and-signup-container {
+    background-image: url("https://images.unsplash.com/photo-1531303919131-9df51d2b0cc7?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE2ODEyN30");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.login-and-signup-content {
+    background-color: #fff;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    padding: 30px;
+
+    &.hidden {
+        display: none;
+    }
+
+    &.block {
+        display: block;
+    }
+
+    small {
+        margin-right: 10px;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    .action-btn {
+        border: none;
+        border-radius: 3px;
+        padding: 5px 10px;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: rgba(182, 182, 182, 0.495);
+            transition: 0.2s;
+        }
+    }
+}
+
+.loggedin-container {
+    background-color: rgba(255, 255, 255, 0.482);
+    padding: 20px;
+    border-radius: 10px;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+    }
+
+    button {
+        border: none;
+        padding: 7px 15px;
+        font-size: 1rem;
+        background-color: $green-label;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 20px;
+
+        &:hover {
+            background-color: $green-label-hover;
+        }
+
+        a {
+            color: white;
+        }
+
+        &:not(:first-of-type) {
+            margin-right: 0;
+            background-color: $red-label;
+
+            &:hover {
+                background-color: $red-label-hover;
+            }
+        }
+    }
+}

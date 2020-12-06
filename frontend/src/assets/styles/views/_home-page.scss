@@ -1,0 +1,147 @@
+.home-container {
+    background: linear-gradient(135deg, #0079bf, #5067c5);
+    min-height: 100vh;
+    height: 100%;
+
+    .hero-section {
+        height: 100%;
+        min-height: 100vh;
+        padding: 0 20px;
+        width: 100%;
+
+        .hero-img-container {
+            flex: 0 0 50%;
+
+            img {
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+.before-tasko-section {
+    padding: 0 20px;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(223, 223, 223);
+
+    .home-description-txt {
+        flex: 0 0 30%;
+        justify-content: flex-end;
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            line-height: 1.5;
+            max-width: 25ch;
+            margin-bottom: 20px;
+            color: #6d6d6d
+        }
+    }
+
+    .notes-img-container {
+        flex: 0 0 60%;
+        content: url(../../imgs/home-notes-img.svg);
+        max-height: 500px;
+        max-width: 500px;
+        margin-right: 100px;
+    }
+}
+
+.home-description-txt-container {
+    flex: 0 0 50%;
+    justify-content: flex-end;
+
+    .home-description-txt {
+        flex-direction: column;
+        color: rgb(245, 244, 244);
+        font-family: $main-font;
+        max-width: 500px;
+
+        h1 {
+            font-size: 3rem;
+            max-width: 15ch;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 25ch;
+            margin-bottom: 20px;
+        }
+
+        .btn-try-it-now-container {
+
+            button {
+                padding: .5rem 1rem;
+                font-size: 1.5rem;
+                line-height: 1.5;
+                color: #fff;
+                background-color: $green-label;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+                outline: none;
+
+                &:hover {
+                    color: #FFF;
+                    transition: 0.2s;
+                    background-color: $green-label-hover;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .before-tasko-section {
+        flex-direction: column-reverse;
+
+        .notes-img-container {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 460px),
+(max-height: 730px) {
+
+    .home-container {
+        padding-bottom: 20px;
+
+        img {
+            display: none;
+        }
+
+        .before-tasko-section {
+            display: none;
+        }
+
+        .hero-section {
+            display: block;
+        }
+    }
+
+
+    .home-description-txt-container {
+        padding-top: 50px;
+
+        .home-description-txt {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
+}

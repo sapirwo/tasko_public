@@ -1,0 +1,58 @@
+//Card Labels
+$red-label: rgb(228, 82, 82);
+$red-label-hover: rgb(155, 80, 80);
+$green-label: rgb(103, 186, 103);
+$green-label-hover: rgb(69, 131, 69);
+$yellow-label: #f2d600;
+$yellow-label-hover: #c2ae13;
+$purple-label: rgb(160, 107, 213);
+$purple-label-hover: rgb(114, 81, 147);
+$blue-label: #026ba7;
+$blue-label-hover: #1b5478;
+$orange-label: rgb(213, 132, 107);
+$orange-label-hover:rgb(136, 86, 70);
+
+
+//Card Bgcs
+$red-bgc: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(255, 37, 0, 0.5262356733524356) 100%);
+$red-bgc-hover: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(144, 31, 11, 1) 100%);
+$green-bgc: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(115, 255, 24, 0.3633164414414415) 100%);
+$green-bgc-hover:radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(68, 135, 23, 0.3633164414414415) 100%);
+$yellow-bgc: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(255, 231, 11, 0.22517830330330335) 100%);
+$yellow-bgc-hover: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(143, 130, 18, 0.41136448948948945) 100%);
+$purple-bgc: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(173, 21, 255, 0.17412725225225223) 100%);
+$purple-bgc-hover: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(92, 20, 131, 0.5945476726726726) 100%);
+$blue-bgc: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(18, 40, 255, 0.30325638138138133) 100%);
+$blue-bgc-hover: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(18, 27, 120, 0.5044575825825826) 100%);
+$orange-bgc: radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(255, 163, 6, 0.34529842342342343) 100%);
+$orange-bgc-hover:radial-gradient(circle, rgba(249, 249, 249, 1) 0%, rgba(148, 101, 22, 0.34529842342342343) 100%);
+
+
+// Breakpoints
+$mobile-breakpoint: 460px;
+$narrow-breakpoint: 720px;
+$normal-breakpoint: 960px;
+
+// Z-index
+$btn-edit-group: 5;
+$header-z-index: 10;
+$overlay-z-index: 20;
+$modal-z-index: 20; //card-details
+$modal-edit-label: 30;
+$modal-select-cover: 30;
+
+//Font
+$main-font: -apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Roboto,
+Noto Sans,
+Ubuntu,
+Droid Sans,
+Helvetica Neue,
+sans-serif;
+
+
+
+
+$btn-close: url('../../imgs/btn/plus.svg');

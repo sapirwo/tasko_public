@@ -1,0 +1,95 @@
+.board-header-container {
+    height: 43px;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+
+    .board-header-left-section {
+        display: inline;
+        max-width: calc(100vw - 50px)
+    }
+
+    .board-title-container {
+        display: inline-block;
+        max-width: 70%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        h2 {
+            display: inline;
+            margin-right: 5px;
+            vertical-align: text-bottom;
+            font-size: 2rem;
+        }
+
+        &.hidden-board-title {
+            display: none;
+        }
+    }
+
+    .board-members-imgs {
+        display: none;
+
+        img {
+            display: inline-block;
+            width: 100%;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            margin-right: 3px;
+            cursor: pointer;
+
+            &:first-of-type {
+                border: rgba(76, 254, 0, 0.616) 1px solid;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .btn-add-members {
+        border: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        font-size: 1rem;
+        padding: 10px;
+        height: 35px;
+        width: 35px;
+        content: $btn-close;
+        display: inline-block;
+        vertical-align: baseline;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    .board-header-right-section {
+        justify-content: flex-end;
+        margin-right: 7px;
+    }
+
+    .board-menu-humburger {
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: rgb(33, 33, 33);
+        border-radius: 50%;
+        line-height: 32px;
+
+        &:hover {
+            color: rgb(87, 87, 87);
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .board-header-container .board-members-imgs {
+        display: inline-block;
+    }
+}

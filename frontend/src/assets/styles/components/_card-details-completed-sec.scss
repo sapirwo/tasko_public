@@ -1,0 +1,37 @@
+.card-details-card-completed {
+    margin-bottom: 20px;
+
+    p {
+        margin: 0;
+        font-size: 1rem;
+        padding-top: 3px;
+        padding-left: 5px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .card-details-unchecked {
+        padding-left: 17px;
+        content: url(../../imgs/checkbox-unchecked.svg);
+        width: 40px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .card-details-checked {
+        padding-left: 17px;
+        content: url(../../imgs/checkbox-cheked.svg);
+        width: 40px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
