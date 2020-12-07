@@ -2,7 +2,7 @@
 `Project manager` (Trello style)
 * Full-scale PWA using React.js (Hooks, Redux state management).
 * Server-side: REST API with Express.js (Node js), Socket.io and MongoDB.
-[![N|](Go to Tasko)](https://tasko-board.herokuapp.com)
+[Go to Tasko](https://tasko-board.herokuapp.com)
 [![N|](https://github.com/sapirwo/tasko_public/blob/master/tasko-demo.gif?raw=true)](https://tasko-board.herokuapp.com)
 
 ----
