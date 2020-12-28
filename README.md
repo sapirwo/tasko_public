@@ -4,6 +4,7 @@
 * Server-side: REST API with Express.js (Node js), Socket.io and MongoDB.
 
 [Go to Tasko](https://tasko-board.herokuapp.com)
+[Backup-link](https://tasko-boards.herokuapp.com)
 
 [![N|](https://github.com/sapirwo/tasko_public/blob/master/tasko-demo.gif?raw=true)](https://tasko-board.herokuapp.com)
 
